@@ -1,0 +1,29 @@
+/* Aim :WAp to print your name,age,class,division and UIN on the screen.
+    Use escape sequences to properly format the output.
+   Name : Tanishq Boraste     Roll No: 26
+   Division : A        UIN : 241A031   Branch : AIDS
+*/
+#include<stdio.h>
+int main()
+{
+    int n,i,a[100],large;
+    // Prompt the user for the number of elements
+    printf("Enter the number of elements : ");
+    scanf("%d",&n);
+    for (i=0;i<=n-1;i++)
+    {
+        printf("Enter a value :");
+        scanf("%d",&a[i]);
+            }
+    // Initialize the first element as the largest
+    large=a[0];
+     // Find the largest element
+    for (i=1;i<=n-1;i++)
+    {
+        if(large<a[i])
+          large=a[i];
+    }
+    // Display the largest element
+    printf("The larges number is %d",large);
+    return 0;
+}
